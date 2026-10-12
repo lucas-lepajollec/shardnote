@@ -1,4 +1,4 @@
-> **Retired project — 12 October 2026.** This repository is no longer actively used or maintained. Source and history are preserved for reference. Dependabot version updates and automatic CI/image publishing have been retired; their files remain in Git history. Existing installations and stored data are not changed by this repository update. Review security and restore the automation deliberately before resuming maintenance.
+> **Retired project — 12 October 2026.** This repository is no longer actively used or maintained. Source and history are preserved for reference. Dependabot version and security PR generation is paused for this retired project. Automatic CI/image publishing is retired, with workflows preserved for reference. Existing security alerts remain visible. Existing installations and stored data are not changed by this repository update. Review security and restore the automation deliberately before resuming maintenance.
 
 <div align="center">
   <img src="public/shardnote-mark.svg" alt="ShardNote logo" width="120" height="120" />

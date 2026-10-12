@@ -1,0 +1,78 @@
+# Retired by Lucas on 2026-10-12; no active installations or maintenance.
+# Pause automated version AND security PRs only for this retired repository.
+# Existing security alerts remain visible; restore this configuration before revival.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:00'
+      timezone: Europe/Paris
+    open-pull-requests-limit: 0
+    groups:
+      npm-minor-and-patch:
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
+      security-updates:
+        applies-to: security-updates
+        patterns:
+          - '*'
+    commit-message:
+      prefix: chore(deps)
+    cooldown:
+      default-days: 7
+    ignore:
+      - dependency-name: '*'
+        versions:
+          - '*'
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:15'
+      timezone: Europe/Paris
+    open-pull-requests-limit: 0
+    groups:
+      github-actions:
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
+    commit-message:
+      prefix: chore(actions)
+    cooldown:
+      default-days: 7
+    ignore:
+      - dependency-name: '*'
+        versions:
+          - '*'
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:30'
+      timezone: Europe/Paris
+    open-pull-requests-limit: 0
+    groups:
+      docker-images:
+        patterns:
+          - '*'
+        update-types:
+          - minor
+          - patch
+    commit-message:
+      prefix: chore(docker)
+    cooldown:
+      default-days: 7
+    ignore:
+      - dependency-name: '*'
+        versions:
+          - '*'
