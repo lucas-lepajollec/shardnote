@@ -1,4 +1,4 @@
-# Retired by Lucas on 2026-10-12; no active installations or maintenance.
+# Retired by Lucas on 2026-10-12; unused project; active maintenance has ended.
 # Pause automated version AND security PRs only for this retired repository.
 # Existing security alerts remain visible; restore this configuration before revival.
 version: 2
